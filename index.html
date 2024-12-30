@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Your personal Website</Title>
+   <title>Elias</Title>
    <style>
        /*Optional: Simple CSS to style the page */
        body {
@@ -37,22 +37,44 @@ section {
 </head>
 <body>
      <header>
-          </h1>Welcometo my Personal Website</h1>
+          </h1>Welcome to Juan Dela Cruz Yah-who!!!</h1>
      </header>
 
      <section>
-          <h2>About me</h2>
-          <p>This is where you can introduce yourself and talk about your hobbies, interest, and skills.</p>
+          <h2>Elias</h2>
+          <p>Juan Dela Cruz chat online</p>
      </section>
 
      <section>
           <h2>Contact</h2>
-          <p>Feel free to contact me at <a href="mailto:youremail@example.com">youremail@example.com </a></p>
+          <p>Feel free to contact me at <a href="lsbsltlsmrn@gmail.com">lsbsltlsmrn@gmail.com </a></p>
      </section>
 
 
      <footer>
-          <p>Made with love by [Your Name}.</p>
+          <p>29dec24sun [Juan Dela Cruz}.</p>
      </footer>
+
+     <!--Chat Box Section -->
+     <div class="chat-container">
+        <div id="chat-box" lass="chat-box"></div>
+        <div class="input-container">
+             <input type="text" id="message" placeholder="Type a message..." />
+             <button onclick="sendMessage()">Send</button>
+        </div>
+     </div>
+
+   <!-- Javascript code for chat box -->
+   <script>
+      function sendMessage() {
+         const message = document.getElementById("message").value;
+         const chatBox = document.getElementById("chat-box");
+         if (message) {
+            chatBox.innerHTML += "<p>" + message + "</p>;
+            document.getElementById(message").value = ""; // Clear the input field
+            chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the latest message
+         }
+      }
+   </script>
 </body>
 </html>
